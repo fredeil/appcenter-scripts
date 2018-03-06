@@ -8,7 +8,7 @@ As well as a list of [pre-defined](https://docs.microsoft.com/en-us/appcenter/bu
 
 ## Project path
 
-Typically, Xamarin.Forms project structure are structured like this:
+Typically, Xamarin.Forms projects are structured like this:
 
 * 📁MyApp
   * MyApp.sln
@@ -30,8 +30,8 @@ After [App Center](http://appcenter.ms) has cloned your repository upon a build 
       * 📁MyApp.UWP
 
 Which means when using `$APPCENTER_SOURCE_DIRECTORY`, you will be at the `MyAppsRepoName` level of your repository.
-So if you want to manipulate your `Info.plist` file you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp/MyApp.iOS/Info.plist`,
-and if you want to manipulate your Android manifest you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp/MyApp.Droid/Properties/AndroidManifest.xml`.
+So if you want to manipulate your `Info.plist` file you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp.iOS/Info.plist`,
+and if you want to manipulate your Android manifest you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp.Droid/Properties/AndroidManifest.xml`.
 
 ## Contributing
 

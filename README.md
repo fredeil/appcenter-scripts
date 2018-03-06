@@ -1,10 +1,6 @@
 # 🔨 App Center build scripts for Xamarin 🔨
 
-This repository contains shell scripts used in [App Center](http://appcenter.ms) for building Xamarin.Forms iOS and Android apps.
-
-**TODO:**
-
-* Add PowerShell scripts for UWP
+This repository contains shell scripts used in [App Center](http://appcenter.ms) for building Xamarin.Forms iOS and Android apps. The scripts are non-generic since they are what I actually use day to day. I might make this repository more "example" friendly in the future.
 
 ## Environment variables
 
@@ -33,6 +29,10 @@ After [App Center](http://appcenter.ms) has cloned your repository upon a build 
       * 📁MyApp.Droid
       * 📁MyApp.UWP
 
-Which means when using `$APPCENTER_SOURCE_DIRECTORY`, you will be at the `MyRepoName` level of your repository.
+Which means when using `$APPCENTER_SOURCE_DIRECTORY`, you will be at the `MyAppsRepoName` level of your repository.
 So if you want to manipulate your `Info.plist` file you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp/MyApp.iOS/Info.plist`,
 and if you want to manipulate your Android manifest you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp/MyApp.Droid/Properties/AndroidManifest.xml`.
+
+## Contributing
+
+This repository is open-source, help and feedback is always welcome and pull requests are accepted.

@@ -1,4 +1,4 @@
-# 🔨 App Center build scripts for Xamarin 🔨
+# 🔨 App Center build scripts for Xamarin 
 
 This repository contains shell scripts used in [App Center](http://appcenter.ms) for building Xamarin.Forms iOS and Android apps. The scripts are non-generic since they are what I actually use day to day. I might make this repository more "example" friendly in the future.
 

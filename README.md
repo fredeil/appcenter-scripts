@@ -33,9 +33,9 @@ Which means when using `$APPCENTER_SOURCE_DIRECTORY`, you will be at the `MyApps
 So if you want to manipulate your `Info.plist` file you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp.iOS/Info.plist`,
 and if you want to manipulate your Android manifest you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp.Droid/Properties/AndroidManifest.xml`.
 
-## Webhooks
+## App Center Webhooks
 
-I found that there is no documentation on the payload of the "New Release Webhook", so here it is:
+I found that there is no documentation on the payload of the "New Release Webhook", so here it is (Android):
 ```json
 {
   "app_name": "my-app-droid",
@@ -58,6 +58,32 @@ I found that there is no documentation on the payload of the "New Release Webhoo
   "distribution_group_id": "66164890-e696-486d-bdb2-1234556678",
   "sent_at": "2018-04-06T10:39:02.8617434Z",
   "app_id": "571410f0-62da-4daf-ab38-1234sg4hn"
+}
+
+```
+And for for iOS:
+```json
+{
+  "app_name": "my-app-ios",
+  "app_display_name": "My App",
+  "release_id": "15",
+  "platform": "iOS",
+  "uploaded_at": "2018-04-06T10:47:42Z",
+  "fingerprint": "aa2fbf9ec3d9b2********",
+  "release_notes": "<p>Merge pull request #272 from Development</p>\n",
+  "version": "69",
+  "short_version": "2.0",
+  "min_os": "8.0",
+  "mandatory_update": true,
+  "size": 44171324,
+  "provisioning_profile_name": "MyTeamsProvisioningProfile",
+  "provisioning_profile_type": "adhoc",
+  "bundle_identifier": "com.mycompany.myapp",
+  "install_link": "https://install.appcenter.ms/orgs/myorg/apps/my-app-ios/releases/1337?source=email",
+  "icon_link": "https://ad45agfg56.cloudfront.net/production/apps/icons/000/693/329/original/myapp.png",
+  "distribution_group_id": "73c37275-0f5d-4b74-bacb-1234556678",
+  "sent_at": "2018-04-06T10:47:46.1383449Z",
+  "app_id": "571410f0-62da-4daf-ab38-1234sg4hn""
 }
 
 ```

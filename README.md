@@ -33,6 +33,35 @@ Which means when using `$APPCENTER_SOURCE_DIRECTORY`, you will be at the `MyApps
 So if you want to manipulate your `Info.plist` file you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp.iOS/Info.plist`,
 and if you want to manipulate your Android manifest you have to call `$APPCENTER_SOURCE_DIRECTORY/MyApp/MyApp.Droid/Properties/AndroidManifest.xml`.
 
+## Webhooks
+
+I found that there is no documentation on the payload of the "New Release Webhook", so here it is:
+```json
+{
+  "app_name": "my-app-droid",
+  "app_display_name": "My App",
+  "release_id": "13",
+  "platform": "Android",
+  "uploaded_at": "2018-04-06T10:39:00Z",
+  "fingerprint": "9126224********",
+  "release_notes": "<p>Merge pull request #272 from Development</p>\n",
+  "version": "69", 
+  "short_version": "2.0.0",
+  "min_os": "4.1",
+  "mandatory_update": true,
+  "size": 74478134,
+  "provisioning_profile_name": null,
+  "provisioning_profile_type": null,
+  "bundle_identifier": "com.mycompany.myapp",
+  "install_link": "https://install.appcenter.ms/orgs/myorg/apps/my-app-droid/releases/1337?source=email",
+  "icon_link": "https://ad45agfg56.cloudfront.net/production/apps/icons/000/693/329/original/myapp.png",
+  "distribution_group_id": "66164890-e696-486d-bdb2-1234556678",
+  "sent_at": "2018-04-06T10:39:02.8617434Z",
+  "app_id": "571410f0-62da-4daf-ab38-1234sg4hn"
+}
+
+```
+
 ## Contributing
 
 This repository is open-source, help and feedback is always welcome and pull requests are accepted.

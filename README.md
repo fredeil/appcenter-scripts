@@ -83,7 +83,7 @@ And for for iOS:
   "icon_link": "https://ad45agfg56.cloudfront.net/production/apps/icons/000/693/329/original/myapp.png",
   "distribution_group_id": "73c37275-0f5d-4b74-bacb-1234556678",
   "sent_at": "2018-04-06T10:47:46.1383449Z",
-  "app_id": "571410f0-62da-4daf-ab38-1234sg4hn""
+  "app_id": "571410f0-62da-4daf-ab38-1234sg4hn"
 }
 
 ```

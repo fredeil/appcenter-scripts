@@ -12,6 +12,7 @@ if [ $? -ne 0 ]; then
     fi 
 fi
 
+
 # Is App Center CLI installed? (all App Center build server should hav this tho)
 npm list -g appcenter-cli >/dev/null
 if [ $? -ne 0 ]; then
